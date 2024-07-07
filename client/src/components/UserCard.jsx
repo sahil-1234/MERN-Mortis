@@ -9,7 +9,7 @@ const UserCard = () => {
   useEffect(() => {
     const fetchUserDetails = async () => {
       try {
-        const { data } = await axios.get('http://localhost:4000/api/v1/user/patient/me', { withCredentials: true });
+        const { data } = await axios.get(`/api/v1/user/patient/me`, { withCredentials: true });
         setUser(data.user);
       } catch (error) {
         setError('Failed to fetch user details');

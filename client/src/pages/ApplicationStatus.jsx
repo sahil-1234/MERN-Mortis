@@ -20,7 +20,7 @@ const ApplicationStatus = () => {
       setLoading(true);
       try {
         const { data } = await axios.get(
-          `http://localhost:4000/api/v1/appointment/patient-history/${patientId}`,
+          `/api/v1/appointment/patient-history/${patientId}`,
           { withCredentials: true }
         );
         setAppointments(data.appointments);
