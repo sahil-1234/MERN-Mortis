@@ -9,6 +9,11 @@ import {errorMiddleware} from "./middlewares/errorMiddleware.js";
 import userRouter from "./router/userRouter.js"
 import appointmentRouter from "./router/appointmentRouter.js";
 
+import path from 'path';
+import { fileURLToPath } from "url";
+
+const __filename=fileURLToPath(import.meta.url)
+const __dirname=path.dirname(__filename)
 const app=express();
 config({path:"./config/config.env"});
 
@@ -32,6 +37,11 @@ app.use(fileUpload({
 app.use("/api/v1/message",messageRouter);
 app.use("/api/v1/user",userRouter);
 app.use("/api/v1/appointment",appointmentRouter);
+
+
+app.use(express.static(path.join(__dirname, "/client/dist")));
+
+app.get("*", (req, res) => res.sendFile(path.join(__dirname, "/client/dist/index.html")));
 
 dbConnection();
 
