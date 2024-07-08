@@ -15,7 +15,7 @@ export const checkAppointmentStatus = catchAsyncErrors(async(req,res,next)=>{
       appointments,
     });
   } catch (error) {
-    next(error); // Pass any caught errors to the error handling middleware
+    next(error); 
   }
 });
 
@@ -26,7 +26,7 @@ export const postAppointment = catchAsyncErrors(async (req, res, next) => {
     return next(new ErrorHandler("User not found", 404));
   }
 
-  // Extract user details
+ 
   const { firstName, lastName, email, phone, dob, gender } = user;
 
   const {
