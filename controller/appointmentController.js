@@ -20,7 +20,7 @@ export const checkAppointmentStatus = catchAsyncErrors(async(req,res,next)=>{
 });
 
 export const postAppointment = catchAsyncErrors(async (req, res, next) => {
-  // Fetch user data from the database using the logged-in user's ID
+ 
   const user = await User.findById(req.user._id);
   if (!user) {
     return next(new ErrorHandler("User not found", 404));
