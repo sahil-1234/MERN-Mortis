@@ -1,9 +1,9 @@
 import React from 'react';
-// Import the image and rename it to avoid confusion with the CSS class name
+
 import bannerImage from "../assets/banner.jpg";
 
 const Banner = () => {
-  // Use the imported image in the style attribute
+
   const bannerStyle = {
     backgroundImage: `url(${bannerImage})`,
     backgroundSize: 'cover',
