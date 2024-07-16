@@ -31,7 +31,7 @@ const ApplicationStatus = () => {
       }
     };
 
-    fetchAppointments(); // Call fetchAppointments inside useEffect
+    fetchAppointments(); 
   }, [patientId]); 
 
   if (loading) {
