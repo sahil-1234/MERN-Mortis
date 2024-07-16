@@ -14,7 +14,7 @@ const ApplicationStatus = () => {
     const fetchAppointments = async () => {
       if (!patientId) {
         console.error("Patient ID is undefined");
-        return; // Only fetch appointments if patientId is defined
+        return; 
       }
 
       setLoading(true);
