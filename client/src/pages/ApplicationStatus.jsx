@@ -32,7 +32,7 @@ const ApplicationStatus = () => {
     };
 
     fetchAppointments(); // Call fetchAppointments inside useEffect
-  }, [patientId]); // Add patientId as a dependency to useEffect
+  }, [patientId]); 
 
   if (loading) {
     return <div className="text-center mt-10">Loading...</div>; // Show loading state
