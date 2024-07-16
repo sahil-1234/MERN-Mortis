@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 const ApplicationStatus = () => {
   const [appointments, setAppointments] = useState([]);
   const [loading, setLoading] = useState(false);
-  const { patientId } = useContext(Context); // Assuming patientId is available in Context
+  const { patientId } = useContext(Context); 
 
   useEffect(() => {
     const fetchAppointments = async () => {
