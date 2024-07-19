@@ -116,7 +116,7 @@ const AppointmentForm = () => {
               </select>
             </div>
 
-            {/* Doctor Selection */}
+           
             <div>
               <label htmlFor="doctorName" className="block text-sm font-medium text-gray-700">Doctor's Name</label>
               <select
