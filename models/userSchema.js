@@ -43,7 +43,7 @@ const userSchema=new mongoose.Schema({
     role:{
         type:String,
         required:true,
-        enum:["Admin","Patient","Doctor"]  // doctor for making future pages of doctor
+        enum:["Admin","Patient","Doctor"]  
     },
     doctorDepartment:{
     type:String
