@@ -36,6 +36,4 @@ bash
 Copy code
 cd ..
 npm run dev
-# Usage
-Navigate to http://localhost:3000 for the frontend.
-Use the admin dashboard to manage hospital operations.
+
