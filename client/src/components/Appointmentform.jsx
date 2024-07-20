@@ -83,7 +83,7 @@ const AppointmentForm = () => {
           >
             <p className="text-center text-lg font-medium">Appointment Form</p>
 
-            {/* Appointment Date Input */}
+           
             <div>
               <label htmlFor="appointmentDate" className="block text-sm font-medium text-gray-700">Appointment Date</label>
               <input
