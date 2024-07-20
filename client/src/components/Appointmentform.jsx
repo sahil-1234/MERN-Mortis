@@ -157,7 +157,7 @@ const AppointmentForm = () => {
               ></textarea>
             </div>
 
-            {/* Have You Visited Checkbox */}
+           
             <div className="flex items-center gap-2">
               <input
                 type="checkbox"
