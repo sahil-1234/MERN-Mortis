@@ -144,7 +144,7 @@ const AppointmentForm = () => {
               </select>
             </div>
 
-            {/* Address Text Area */}
+           
             <div>
               <label htmlFor="address" className="block text-sm font-medium text-gray-700">Address</label>
               <textarea
