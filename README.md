@@ -31,8 +31,6 @@ npm install
 Configure environment variables in a .env file.
 
 # Start the development server:
-
-bash
 Copy code
 cd ..
 npm run dev
