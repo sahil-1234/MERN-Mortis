@@ -178,7 +178,7 @@ const AppointmentForm = () => {
             </button>
           </form>
 
-          {/* View Appointment History Button */}
+         
           <div className="mt-6 text-center">
             <button
               onClick={() => navigateTo("/application-status")}
