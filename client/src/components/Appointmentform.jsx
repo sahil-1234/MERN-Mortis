@@ -169,7 +169,7 @@ const AppointmentForm = () => {
               <label htmlFor="hasVisited" className="text-sm text-gray-700">Have you visited before?</label>
             </div>
 
-            {/* Submit Button */}
+            
             <button
               type="submit"
               className="block w-full rounded-lg bg-green-800 px-5 py-3 text-sm font-medium text-white transition hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"
